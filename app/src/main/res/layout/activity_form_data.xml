@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nimmhs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Induk (NIM)" />
+
+                <EditText
+                    android:id="@+id/nim"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_form"
+                    android:hint="e.g : 19SAxxx"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/namamhs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkao" />
+
+                <EditText
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_form"
+                    android:hint="e.g : Your Full Name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fakultas" />
+
+                <Spinner
+                    android:id="@+id/Fakultas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:entries="@array/daftar_fakultas"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Program Studi" />
+
+                <Spinner
+                    android:id="@+id/Prodi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:entries="@array/daftar_prodi"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. Handphone" />
+
+                <EditText
+                    android:id="@+id/nope"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_form"
+                    android:hint="e.g : 085xxxxxxxxx"
+                    android:inputType="phone"
+                    android:maxLength="12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emailmhs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Email" />
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_form"
+                    android:ems="10"
+                    android:hint="e.g : name@mail.com"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ipkmhs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="IPK" />
+
+                <EditText
+                    android:id="@+id/ipk"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_form"
+                    android:hint="e.g : 4.0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Lengkap" />
+
+                <EditText
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_form"
+                    android:gravity="top"
+                    android:hint="Tulis alamat lengkap"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tgl"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir" />
+
+
+                <EditText
+                    android:id="@+id/tgllahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="DD/MM/YYYY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/golda"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Golongan Darah" />
+
+                <CheckBox
+                    android:id="@+id/golA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/golda"
+                    android:layout_marginStart="20dp"
+                    android:text="A" />
+
+                <CheckBox
+                    android:id="@+id/golB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/golda"
+                    android:layout_marginStart="10dp"
+                    android:text="B" />
+
+                <CheckBox
+                    android:id="@+id/golAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/golda"
+                    android:layout_marginStart="10dp"
+                    android:text="AB" />
+
+                <CheckBox
+                    android:id="@+id/golO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/golda"
+                    android:layout_marginStart="10dp"
+                    android:text="O" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/jk"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin" />
+
+                <RadioGroup
+                    android:id="@+id/rgjeniskelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jk"
+                    android:layout_marginStart="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioPria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pria" />
+
+                    <RadioButton
+                        android:id="@+id/radioWanita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wanita" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profilPic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_addpp" />
+
+            <Button
+                android:id="@+id/getfoto"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Pilih Foto" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="45dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/showdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:backgroundTint="#8E1600"
+                    android:drawableLeft="@drawable/ic_back"
+
+                    />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#009900"
+                    android:text="Simpan" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

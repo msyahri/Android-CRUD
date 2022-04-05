@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "1013761589103",
+    "firebase_url": "https://sharefix-default-rtdb.firebaseio.com",
+    "project_id": "sharefix",
+    "storage_bucket": "sharefix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013761589103:android:758c192d63f681f1b1729a",
+        "android_client_info": {
+          "package_name": "pmo.M_Syahri_19SA1239.CRUD"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013761589103-05bp9sg63nf98pflri25vnmb9atkdu0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pmo.M_Syahri_19SA1239.CRUD",
+            "certificate_hash": "340e900183633053876c7a6f69b2705721f0ff61"
+          }
+        },
+        {
+          "client_id": "1013761589103-pue01jqam8dalnmuvtmr709hqothloho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTxCjbakXdCf99DWdhzrCdv5dvbxkAOgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013761589103-pue01jqam8dalnmuvtmr709hqothloho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013761589103:android:470aeba558a36618b1729a",
+        "android_client_info": {
+          "package_name": "pmo.M_Syahri_19SA1239.ShareFix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013761589103-9vgi6b4pnph01f40m1mupmgmfjhgp2o9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pmo.M_Syahri_19SA1239.ShareFix",
+            "certificate_hash": "cbeddd9cf8a4499e66144409e743f401ec0236e8"
+          }
+        },
+        {
+          "client_id": "1013761589103-agardpmjaksrq5khdp11fbeoh3tltm2u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pmo.M_Syahri_19SA1239.ShareFix",
+            "certificate_hash": "b3f25a2838907acdfdcec8357fc61d9a6ac4e0b4"
+          }
+        },
+        {
+          "client_id": "1013761589103-tgkr7t80lbte6n180v2e6entk4q6drb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pmo.M_Syahri_19SA1239.ShareFix",
+            "certificate_hash": "340e900183633053876c7a6f69b2705721f0ff61"
+          }
+        },
+        {
+          "client_id": "1013761589103-pue01jqam8dalnmuvtmr709hqothloho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTxCjbakXdCf99DWdhzrCdv5dvbxkAOgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013761589103-pue01jqam8dalnmuvtmr709hqothloho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

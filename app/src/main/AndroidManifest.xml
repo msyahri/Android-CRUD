@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pmo.M_Syahri_19SA1239.CRUD">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShareFix">
+
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.ActivityUpdate" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.ListDataActivity" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.form_data" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.HomeActivity" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.RegisterActivity" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.LoginActivity" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.MainActivity" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.info_logged" />
+        <activity android:name="pmo.M_Syahri_19SA1239.CRUD.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

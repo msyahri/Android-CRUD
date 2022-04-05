@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShareFix~CRUD</string>
+    <string-array name="daftar_fakultas">
+        <item>Ilmu Komputer (FIK)</item>
+        <item>Bisnis dan Ilmu Sosial (FBIS)</item>
+    </string-array>
+
+    <string-array name="daftar_prodi">
+        <item>Informatika (IF)</item>
+        <item>Sistem Informasi (SI)</item>
+        <item>Teknologi Informasi (TI)</item>
+        <item>Ilmu Komunikasi (IK)</item>
+        <item>Bisnis Digital (BD)</item>
+    </string-array>
+</resources>
